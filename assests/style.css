@@ -126,16 +126,30 @@ html {
     font-size: 12px;
 }
 /* icon-search */
+.mobile-menu-btn {
+    display: none;
+}
+.mobile-menu-btn,
 .search-btn {
     position:absolute;
     right: 0;
     padding: 0 20px;
     cursor: pointer;
 }
+
 .search-btn:hover {
     background-color: #f44336!important
 }
-#header .search-btn i {
+.mobile-menu-btn:hover {
+    background-color: #ccc;
+    
+}
+.mobile-menu-btn:hover > i {
+    color: #000;
+}
+
+ .mobile-menu-btn i,
+ .search-btn i {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
@@ -170,6 +184,7 @@ html {
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 16px;
 }
@@ -194,21 +209,23 @@ html {
 #content .container-members-band {
     display: flex;
     flex-direction: row;
-    margin: 40px 25px ;
+    margin: 40px 0 ;
 }
 #content .member-band{
-    width: 30%;
-    margin: 0 14px;
+    width: 33.33%;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    
 }
+  
+
 #content .name {
     font-size: 15px;
     margin: 15px 0;
     
 }
 #content .avt {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
     width: 60%;
     border-radius: 5px;
 }
@@ -247,7 +264,7 @@ html {
 
 /* place */
 .container-box-ticket {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
     
 }
@@ -429,7 +446,6 @@ html {
 }
 .socials {
     font-size: 24px;
-   
 }
 #footer a {
     color:rgba(0, 0, 0, 0.5);

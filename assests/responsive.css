@@ -1,0 +1,53 @@
+
+/*  PC */
+@media (min-width: 1024px) {
+   
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/*  Mobile */
+@media (max-width: 768px) {
+    .s-col {
+        float: left;
+    }
+    .s-full-width,
+    .s-col-ful {
+        width: 100%;
+    }
+
+    #nav {
+        width: 100%;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav li:first-child {
+        display: inline-block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    .search-btn {
+        display: none;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    /* Member ban */
+    #content .container-members-band{
+        flex-direction: column;
+    }
+    #content .mobile-member-band {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .avt {
+        width: 80%;
+    }
+
+}
